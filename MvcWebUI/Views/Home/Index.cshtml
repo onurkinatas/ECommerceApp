@@ -1,0 +1,14 @@
+﻿@model List<ProductModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+@{
+    foreach (var product in Model) 
+    {
+        <h3>@product.ProductName</h3>
+    }
+}
